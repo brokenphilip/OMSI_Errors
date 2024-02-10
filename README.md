@@ -24,6 +24,7 @@ Function: `TTimeTableMan.RefreshAllVehicleIndizes` (Indices)
 Function: `TRVList.CopyTempListIntoMainList`
 
 **AMUAV:** `TProgMan.AddMissingUnscheduledAIVehicles`
+
 **AMSAV:** `TProgMan.AddMissingScheduledAIVehicles`
 
 ## AMUAV.CNAVO.GGP
