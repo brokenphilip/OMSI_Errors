@@ -55,6 +55,8 @@ Function: `TRoadVehicleInst.Calculate`
 
 **CV.Calculate - J[1-3]** appear to indicate vehicle script errors. Needs more research.
 
+**CV.Calculate - J2** at addresses `007D97B6` (for 2.3.004) or `007D9546` (for 2.2.032) indicates a null `TPathSegment` (reading from address `00000150`, which is the startOffsetX).
+
 ## MM.LM.[x].[x]
 Function: `TMaterialMan.LoadMaterial`
 
