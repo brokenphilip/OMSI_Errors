@@ -73,7 +73,7 @@ Function: `TMaterialMan.LoadMaterial`
 
 Seems to happen when using "Limit all textures (apart from own bus) to 256x256" under the Advanced Graphics options. Needs more research.
 
-Sometimes, when OMSI hangs (during graphics loading?), using a debugger will cause **MM.LM.13** on your currently driven bus. Needs more research.
+Sometimes, when OMSI hangs (during graphics loading?), using a debugger will cause **MM.LM.13**. Needs more research.
 
 ## P.KNNC.KM
 Function: `TRVList_KillMarked` (from `TProgMan.KillNotNeededCars`)
