@@ -50,6 +50,11 @@ Function: `TProgMan.CheckKachelSprung` (`CheckTileJump`?)
 ## CMO_[x], CMO.[x]
 Function: `TProgMan.CalcMovingObjects`
 
+## CMOI.R.[x]
+Function: `TComplMapObjInst.Render`
+
+Sometimes, when OMSI hangs (during graphics loading?), using a debugger will cause **CMOI.R.3** on your currently driven bus. Needs more research.
+
 ## CSV.[x]
 Function: `RS.CheckSunVisible` (see **RS.[x]**)
 
@@ -64,6 +69,8 @@ Function: `TRoadVehicleInst.Calculate`
 Function: `TMaterialMan.LoadMaterial`
 
 Seems to happen when using "Limit all textures (apart from own bus) to 256x256" under the Advanced Graphics options. Needs more research.
+
+Sometimes, when OMSI hangs (during graphics loading?), using a debugger will cause **MM.LM.13** on your currently driven bus. Needs more research.
 
 ## P.KNNC.KM
 Function: `TRVList_KillMarked` (from `TProgMan.KillNotNeededCars`)
