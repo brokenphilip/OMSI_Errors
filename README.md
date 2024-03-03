@@ -18,31 +18,27 @@ On the latest `2.3.004` OMSI 2 version, in `TD3DMeshFileObject.LoadMeshFromPreMe
 
 Seems to occur upon map load when opening the main menu after a failed Direct3D device reset, which is a fatal error, at the end of gameplay, accompanied by a bunch of `Direct9 Error: D3DERR_INVALIDCALL` in the logfile. Most dialogs will fail to open or otherwise be unresponsive. The game must be closed irregularly (eg. Task Manager).
 
-## AMSAV.LI.R
+## AMSAV.LI.R [^amsav]
 Function: `TLoadingInfo.Refresh`
 
-## AMSAV.TTM.RATE
-Function: `TTimeTableMan.RefreshAllTagErledigt` (Erledigt = Completed)
-
-## AMSAV.TTM.RAVI
-Function: `TTimeTableMan.RefreshAllVehicleIndizes` (Indices)
-
-## AMUAV.CNAVO.CTLIML and AMSAV.SV.CTLIML
+## AMSAV.SV.CTLIML and AMUAV.CNAVO.CTLIML [^amsav][^amuav]
 Function: `TRVList.CopyTempListIntoMainList`
 
-**AMUAV:** `TProgMan.AddMissingUnscheduledAIVehicles`
+## AMSAV.TTM.RATE [^amsav]
+Function: `TTimeTableMan.RefreshAllTagErledigt` (Erledigt = Completed)
 
-**AMSAV:** `TProgMan.AddMissingScheduledAIVehicles`
+## AMSAV.TTM.RAVI [^amsav]
+Function: `TTimeTableMan.RefreshAllVehicleIndizes` (Indices)
 
-## AMUAV.CNAVO.GGP
+## AMUAV.CNAVO.GGP [^amuav]
 Function: `TTrafficPathManager.GetGlobalPosition`
 
-## AMUAV.CNAVO.MV.[A-U] (...)
+## AMUAV.CNAVO.MV.[A-U] (...) [^amuav]
 Function: `TProgMan.MakeVehicle`
 
 **AMUAV.CNAVO.MV.C** (and potentially others) occurs when the game tries to spawn a bus with no name, which could be a sign of (but not necessarily) a poorly formatted `ailists.cfg`. Needs more research.
 
-## AMUAV.RSAS
+## AMUAV.RSAS [^amuav]
 Function: `TProgMan.RefreshSoundpacksAISwitch`
 
 ## CHAD - [Humans, Drivers] (...)
@@ -118,3 +114,6 @@ Function: `TTrafficPathManager.GetStreetConditions`
 
 ## TUV [x]
 *todo*
+
+[^amsav]: **AMSAV:** `TProgMan.AddMissingScheduledAIVehicles`
+[^amuav]: **AMUAV:** `TProgMan.AddMissingUnscheduledAIVehicles`
