@@ -3,13 +3,20 @@ This repository ~~contains~~ aims to contain information for end-users and devel
 
 Currently a **very** early work-in-progress - information is mostly missing, mainly of technical nature, and could be incorrect or misleading.
 
-## Address `00000000` and `00000000`
-This error is incredibly vague and can be caused in numerous ways.
+## Address `00000000` reading/writing `00000000`
+This error is incredibly vague, applies to all versions of OMSI 2 and can be caused in numerous ways.
 
 When a plugin fails to load ("LoadLibrary failed!" in the log file), this error appears when trying to close the game. You must close it irregularly (eg. Task Manager).
 
-## Address `00624BAC` (...)
+## Address `00624BAC` writing `00000004`
+On the latest `2.3.004` OMSI 2 version, in `THumanBeing.LoadFromFile`, a human being's complex object pointer (`THumanBeing.ComplObj:TComplObj`) was null.
+
 Indicates an issue with the `humans.txt` file of a map, likely incorrectly formatted or contains humans that don't exist (which are also written in the logfile).
+
+## Address `007C5CC6` reading `00000000`
+On the latest `2.3.004` OMSI 2 version, in `TD3DMeshFileObject.LoadMeshFromPreMesh`, a mesh object was invalid (`TD3DMeshFileObject.mesh:ID3DXMesh` was null).
+
+Seems to occur upon map load when opening the main menu after a failed Direct3D device reset, which is a fatal error, at the end of gameplay, accompanied by a bunch of `Direct9 Error: D3DERR_INVALIDCALL` in the logfile. Most dialogs will fail to open or otherwise be unresponsive. The game must be closed irregularly (eg. Task Manager).
 
 ## AMSAV.LI.R
 Function: `TLoadingInfo.Refresh`
