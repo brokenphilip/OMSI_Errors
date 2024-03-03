@@ -3,6 +3,9 @@ This repository ~~contains~~ aims to contain information for end-users and devel
 
 Currently a **very** early work-in-progress - information is mostly missing, mainly of technical nature, and could be incorrect or misleading.
 
+Feel free to contribute by creating your own (or replying to an existing) [issue](https://github.com/brokenphilip/OMSI_Errors/issues?q=is%3Aissue). The title should ideally be the error itself, and the description should contain any known information about said error - when/how/why it happens and similar. Bonus points if the error is reproducible!
+###### SELF-TODO: should I use discussions instead of issues for this?
+
 ## Address `00000000` reading/writing `00000000`
 This error is incredibly vague, applies to all versions of OMSI 2 and can be caused in numerous ways.
 
