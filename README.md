@@ -44,6 +44,9 @@ Function: `TProgMan.MakeVehicle`
 ## AMUAV.RSAS [^amuav]
 Function: `TProgMan.RefreshSoundpacksAISwitch`
 
+## "Black Bus" / "Black Textures"
+See [this](https://twitter.com/brokenphilip/status/1766429278487343264) Twitter/X thread.
+
 ## CHAD - [Humans, Drivers] (...)
 Function: `TProgMan.CalcMovingObjects` (`CalcHumansAndDrivers`)
 
