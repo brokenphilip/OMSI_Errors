@@ -45,7 +45,7 @@ Function: `TProgMan.MakeVehicle`
 Function: `TProgMan.RefreshSoundpacksAISwitch`
 
 ## "Black Bus" / "Black Textures"
-See [this](https://twitter.com/brokenphilip/status/1766429278487343264) Twitter/X thread.
+See [this Twitter/X thread](https://twitter.com/brokenphilip/status/1766429278487343264) for more insight.
 
 However, it is also possible for .dds textures to have the wrong alpha format, as explained by [Anonim17PL](https://github.com/Anonim17PL) a while back in [this video](https://www.youtube.com/watch?v=h8PMKOXWOFw).[^2] They should have a separate alpha channel & should be in texconv's "dx9" format. The wrongly formatted textures show up as black as OMSI mis-interprets the non-existent alpha channel as a mipmap channel. Additionally, some users had luck by ticking (or unticking?) the "Generate Mip Maps" in Paint.NET, but this is likely a worse solution as it removes mipmaps entirely from textures, rather than formatting them correctly. After export from editing softare, they can be converted as follows:
 
