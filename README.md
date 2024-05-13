@@ -1,7 +1,8 @@
 # OMSI Errors
 This repository ~~contains~~ aims to contain information for end-users and developers about various errors which may occur in OMSI 2 Bus Simulator.
 
-Currently a **very** early work-in-progress - information is mostly missing, mainly of technical nature, and could be incorrect or misleading.
+> [!NOTE]
+> Currently a **very** early work-in-progress - information is mostly missing, mainly of technical nature, and could be incorrect or misleading.
 
 Feel free to contribute by creating your own (or replying to an existing) [issue](https://github.com/brokenphilip/OMSI_Errors/issues?q=is%3Aissue). The title should ideally be the error itself, and the description should contain any known information about said error - when/how/why it happens and similar. Bonus points if the error is reproducible!
 ###### SELF-TODO: should I use discussions instead of issues for this?
