@@ -133,9 +133,14 @@ Function: `TTrafficPathManager.ClearAllBelegungenAndDens` (Belegungen = Occupanc
 Function: `TTrafficPathManager.GetStreetConditions`
 
 ## TUV [x]
-*todo*
+Caused by incorrect [matl] definitions in the model configuration file.
+
+One of the reasons is that there is a material defined in the mesh file which isn't being used by the mesh, and [X] is the number of the problematic material from the list.[^3]
+
+Ensure the material tags precisely match the materials assigned to your mesh in your modeling software of choice.
 
 [^1]: See [issue #1](https://github.com/brokenphilip/OMSI_Errors/issues/1)
 [^2]: See [issue #2](https://github.com/brokenphilip/OMSI_Errors/issues/2)
+[^3]: See [issue #3](https://github.com/brokenphilip/OMSI_Errors/issues/3)
 [^amsav]: **AMSAV:** `TProgMan.AddMissingScheduledAIVehicles`
 [^amuav]: **AMUAV:** `TProgMan.AddMissingUnscheduledAIVehicles`
